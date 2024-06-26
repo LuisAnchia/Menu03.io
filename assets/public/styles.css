@@ -1,0 +1,458 @@
+body {
+    background:#31875A;
+    background-image: url(/assets/img/texturaCartonMobile.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-blend-mode: multiply; 
+}
+
+h2{
+    text-align: center;
+    font-size: 0.7rem;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+
+.circle-container{
+    background-image: url(/assets/img/EllipseMobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    margin-left: 0%;
+    text-align: center;
+}
+
+.title{
+    font-family: "Literata", serif;
+    font-optical-sizing: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.title span{
+    font-size: 1.8rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 85px;
+  }
+
+  .container .title {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+}
+  
+  .rectangulo {
+    /*width: 330px;*/
+   /* height: 320px;*/
+   /* position: absolute;*/
+    background: #D1A040;
+    /*box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.25);*/
+    border-radius: 25.36px;
+    /*border: 0.79px #F9C50D solid;
+    left: calc(50% - 167.5px);
+    top: calc(50% - 160px);*/
+}
+
+.accordion{
+    --bs-accordion-bg: #D1A040;
+    --bs-accordion-border-color: #dee2e600;
+    --bs-accordion-active-color: #ffffff;
+    --bs-accordion-active-bg: #cfe2ff00;
+    --bs-accordion-btn-padding-x: 6.25rem;
+    width: 300px;
+}
+
+.accordion-flush .accordion-item {
+    border-radius: 10px; 
+    overflow: hidden; 
+    margin: -19px;
+  }
+  
+  .accordion-flush .accordion-button {
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+  }
+  
+  .accordion-flush .accordion-button.collapsed {
+    border-radius: 10px; 
+    font-family: "Literata", serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* .accordion-button::after {
+    width: auto;
+} */
+
+/* .accordion-item {
+  margin: -16px !important;
+} */
+
+.DropDropDownContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  z-index: 999;
+}
+
+button.btn.btn-secondary.dropdown-toggle {
+  width: 100%;
+  height: 80px;
+  font-size: 1.1rem !important;
+  font-weight: bold;
+}
+
+.dropdown1 button {
+  background: #007A33 !important;
+  border: none !important;
+}
+
+.dropdown2 button {
+  background: #FFFFFF !important;
+  color: black;
+  border: none !important;
+}
+
+.dropdown3 button {
+  background: #FE0303 !important;
+  border: none !important;
+}
+
+.slogan{
+  font-weight: bold;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 13px;
+  margin-left: 27px;
+  font-size: 1.5rem;
+  font-family: "Literata", serif;
+}
+
+.socialcons{
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  position: relative;
+}
+
+footer {
+  background: #FCAF00;
+  padding: 10px 40px;
+}
+
+.contenedorPizza {
+  position: relative;
+}
+
+.contenedorPizza2 {
+  position: relative;
+}
+
+img.comePizzas {
+  width: 45%;
+  position: absolute;
+  left: 55%;
+  bottom: -78px;
+}
+
+img.comePizzas1 {
+    width: 300px;
+    position: absolute;
+    left: 64%;
+    bottom: -78px;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+button.btn.btn-danger.dropdown-toggle {
+  width: 98px;
+}
+
+.accordion-button::after {
+display: none;
+}
+
+button.accordion-button.collapsed {
+  text-align: center !important;
+  justify-content: center;
+}
+
+.ingredients{
+  font-size: 0.5rem;
+}
+
+/* Define la animación pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Aplica la animación al botón de acordeón cuando no esté colapsado */
+.accordion-button:not(.collapsed) {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    animation: pulse 1s infinite;
+    filter: drop-shadow(0px 3px 1px black);
+    font-size: 1.2rem;
+}
+
+
+button.accordion-button {
+  justify-content: center;
+}
+
+h2.accordion-header {
+    border-bottom: 5px solid #00800000;
+}
+
+.dropdown2 button.btn.btn-secondary.dropdown-toggle.show {
+  color: green;
+  font-weight: 500;
+}
+
+.dropdown2 .btn:hover {
+  color: green !important;
+  font-weight: 500;
+}
+
+.img-fluid {
+  max-width: 103%;
+  height: auto;
+}
+
+button.btn.btn-secondary.dropdown-toggle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title span{
+  margin-top: -10px;
+}
+
+/*Medias Queries*/
+@media (min-width: 768px) {
+  .circle-container {
+      background-image: url(/assets/img/EllipseTablet.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .circle-container {
+      background-image: url(/assets/img/EllipseDesktop.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedorPizza {
+      display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .contenedorPizza2 {
+      display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  img.comePizzas3 {
+    display: none;
+  }  
+}
+
+@media (min-width: 768px) {
+  button.btn.btn-secondary.dropdown-toggle {
+    width: 230px;
+    height: 60px;
+    font-size: 1.5rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  img.comePizzas1 {
+    left: 61%;
+  }
+}
+
+@media (min-width: 768px) {
+  .slogan {
+    margin-top: 90px;
+    position: relative;
+    bottom: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .accordion {
+    width: 400px;
+  }
+}
+
+/*Responsive Desktop*/
+@media only screen and (min-width: 769px) {
+    .container {
+        bottom: 70px;
+        left: -20%;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+  .DropDropDownContainer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 422px;
+    margin-left: 900px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .dropdown2 {
+    padding: 0px 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1340px) {
+  .DropDropDownContainer {
+    bottom: 423px;
+    margin-left: 534px;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  .accordion {
+    width: 380px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .accordion {
+    width: 670px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .container .title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  button.btn.btn-secondary.dropdown-toggle {
+    width: 130px;
+    border: 1px solid #ffffff36 !important;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    background-image: url(../img/texturaCarton.png);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+.card.mb-3 {
+  max-width: 707px !important;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    background-image: url(../img/texturaCarton.png);
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .card-body {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 46.333333%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 50.666667%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .slogan {
+   display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  img.comePizzas1 {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  img.comePizzas3 {
+    display: block; /* Asegura que la imagen se muestre en pantallas grandes */
+    width: 35%;
+    position: fixed;
+    left: 64%;
+    bottom: -78px;
+  }
+}
+
+@media (max-width: 768px) {
+  img.comePizzas3 {
+display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  button.accordion-button.collapsed {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 1rem;
+  }
+}
+
+
+/* @media (min-width: 768px) { 
+  .borderTaps {
+    font-size: 2.1rem; 
+  }
+} */
